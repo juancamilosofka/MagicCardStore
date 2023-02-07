@@ -1,0 +1,18 @@
+
+<div *ngFor="let card of cardlist!.cards" class="card-group modifieddeck">
+<div>
+<app-detailcard
+
+tittle = {{card.name}}
+
+detailtext = {{card.text}}
+
+buttontext = "buy"
+[activatebutton] = "activatebutton"
+price = {{card.cmc}}
+(buycard)="buttonaction(card.id)"
+imageUrl= {{card.imageUrl}}></app-detailcard>
+
+</div>
+
+</div>

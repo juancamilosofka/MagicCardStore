@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-dark bg-dark navbarmod">
+
+  <div class="subcommentscontainer" *ngFor="let item of sidebaritems">
+    <div class="acontainer">
+      <a
+      class="navbar-brand active"
+        id="{{ item }}"
+
+        routerLinkActive="activelink"
+        routerLink="/main/{{ item }}">
+        {{ item.replace('_', ' ') }}
+      </a>
+    </div>
+  </div>
+
+
+
+<app-secondarybutton (click)="logoutuser($event)"
+class="glyphicon glyphicon-user card-title d-flex justify-content-center "
+[text] ="buttontext">
+</app-secondarybutton>
+</nav>

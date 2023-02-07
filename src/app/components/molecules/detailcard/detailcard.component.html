@@ -1,0 +1,19 @@
+
+<div class="card modifier" style="width: 18rem;">
+  <app-primaryimage [imageUrl] = "imageUrl"></app-primaryimage>
+
+    <div class="card-body">
+      <app-primarytext text = "Price: ${{price}}"></app-primarytext>
+      <div *ngIf="activatebutton">
+      <app-secondarybutton
+      [text] ="buttontext"
+      (newButtonEvent) = "buttonaction()"
+      ></app-secondarybutton>
+    </div>
+    <app-primaryttittle [text] = "tittle"></app-primaryttittle>
+
+    <app-primarytext [text] = "detailtext" ></app-primarytext>
+
+
+  </div>
+</div>

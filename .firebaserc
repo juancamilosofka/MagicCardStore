@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "magic-cards-exchange": {
+      "hosting": {
+        "MagicCardsStore": [
+          "magic-cards-exchange"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "magic-cards-exchange"
+  }
+}

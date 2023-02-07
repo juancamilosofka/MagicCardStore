@@ -1,0 +1,51 @@
+
+.modified {
+
+  border: none;
+   max-width: 300px;
+  }
+
+
+
+.container{
+  height: 100%;
+  align-content: center;
+  }
+
+  .card{
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(23, 26, 30, 0.5) !important;
+  }
+
+  .social_icon span{
+  font-size: 60px;
+  margin-left: 10px;
+  color: #FFC312;
+  }
+
+  .social_icon span:hover{
+  color: white;
+  cursor: pointer;
+  }
+
+  .card-header h3{
+  color: white;
+  }
+
+.inputmodifier{
+
+  margin: 30px;
+}
+
+  input:focus{
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+
+  }
+
+
+
+

@@ -1,0 +1,12 @@
+<app-simpleform
+
+buttontext = "fund"
+tittle = "Add Funds"
+subtittle = 'Your current balance is: ${{currentuser!.funds}}'
+placeholder = 'amount to add'
+[fundsForm] = "fundsForm"
+
+(newbuttonEvent)="addfunds($event)"
+></app-simpleform>
+
+
