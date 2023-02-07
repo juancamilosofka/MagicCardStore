@@ -8,7 +8,7 @@ import { MagicCard } from 'src/app/models/magicCardApiModel';
 })
 export class CardlistcontainerComponent {
   constructor(private router: Router
-     ){   }
+     ){ console.log(this.cardlist)  }
 
   @Input()
   cardlist?: MagicCard;

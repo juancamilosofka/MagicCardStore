@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient , HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { MagicCard } from '../models/magicCardApiModel';
+import { MagicCard, MagicCardSingle } from '../models/magicCardApiModel';
 
 @Injectable({
   providedIn: 'root'
@@ -18,8 +18,8 @@ export class MagicCardsApiService {
     return this.client.get<MagicCard>('https://api.magicthegathering.io/v1/cards?page='+page+'1&pageSize='+size)
   }
 
-  findCardbyId(id:string): Observable<MagicCard>{
+  findCardbyId(id:string): Observable<MagicCardSingle>{
 
-    return this.client.get<MagicCard>('https://api.magicthegathering.io/v1/cards/'+id)
+    return this.client.get<MagicCardSingle>('https://api.magicthegathering.io/v1/cards/'+id)
   }
 }

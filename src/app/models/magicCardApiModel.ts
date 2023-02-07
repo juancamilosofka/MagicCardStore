@@ -48,3 +48,6 @@ export type MagicCard = {
   cards: Card[];
 }
 
+export type MagicCardSingle = {
+  card: Card;
+}
