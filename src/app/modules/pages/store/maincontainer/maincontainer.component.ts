@@ -19,7 +19,7 @@ export class MaincontainerComponent implements OnInit {
 
   constructor(private router: Router,    private firestoreserviceuser: UserServiceService,  private angularAuth:AngularFireAuth,) {
 
-  this.sidebaritems = ['Buy_Cards', 'Fund', 'Your_Cards', 'Log'];
+  this.sidebaritems = ['Buy_Cards', 'Fund', 'Your_Cards'];
 }
 
 ngOnInit(): void {

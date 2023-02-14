@@ -3,7 +3,9 @@
     "target": "MagicCardsStore",
     "public": "dist/magic-cards-store",
     "ignore": [
-      "**/.*"
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ],
     "headers": [
       {
